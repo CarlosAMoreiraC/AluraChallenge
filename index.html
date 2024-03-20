@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Encrypter</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="logo"> <img src="./img/Logo.png" /></div>
+                <div><textarea id="input-entrada" class="textarea" type="text"
+                        placeholder="Ingrese el texto aqui"></textarea>
+                    <img src="img/Frame 1.png" class="textareaBottomImg">
+                </div>
+
+                <div class="container__botones">
+                    <button onclick="encriptar();" class="container__boton">Encriptar</button>
+                    <button onclick="desencriptar()" class="container__boton">Desencriptar</button>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div><textarea id="input-salida" class="textarea output" hidden="true"></textarea></div>
+                <div id="munecoImg" class="munecoImgDiv">
+                    <img src="img/Muñeco.png" id="munecoImg" class="munecoImg">
+                    <p class="munecoImg"><b>Ningún mensaje fue encontrado</b></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js" defer></script>
+
+</body>
+
+</html>
